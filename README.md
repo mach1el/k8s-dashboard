@@ -5,15 +5,9 @@ Deploy kubernetes dashboard
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 ```
-
-## Deploy rbac
+## Create admin user
 ```
-kubectl apply -f rbac.yaml
-```
-
-## Deploy sa
-```
-kubectl apply -f sa.yaml
+kubectl apply -f dashboard-admin.yaml
 ```
 
 ## Get token
